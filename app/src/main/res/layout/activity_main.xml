@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ma"
+        android:id="@+id/text_search"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:onClick="run"
+        android:textSize="20sp"
+        android:background="@drawable/cycile"
+        android:id="@+id/button_search"
+        android:layout_marginBottom="10dp"
+
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="10dp"
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:alpha=".7"
+            android:src="@drawable/books"
+            android:id="@+id/start_book"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <ProgressBar
+
+            android:id="@+id/ProgressBar"
+            android:indeterminate="true"
+            android:layout_margin="30dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>
